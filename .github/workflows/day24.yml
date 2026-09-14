@@ -1,0 +1,12 @@
+name: Day24 CI/CD
+
+ on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/chekout@v3
+      - name: Run a test
+        run: echo "Running day24 pipeline!"
